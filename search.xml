@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[浏览器内核]]></title>
+    <url>%2F2018%2F02%2F26%2F%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E6%A0%B8%2F</url>
+    <content type="text"><![CDATA[1.Trident内核又称IE内核，主要用于的浏览器有IE、遨游、 2.Webkit内核浏览器有Safari和Chrome 主要用于Mac OS系统 在2013年发布的Chrome28.0.1469.0版本开始，Chrome开始使用最新的 Blink 引擎。 3.Gecko内核是最流行的排版引擎之一，仅次于Trident。浏览器有Firefox、 Netscape6至9 4.Presto内核浏览器有Opera7.0及以上]]></content>
+      <categories>
+        <category>浏览器内核</category>
+      </categories>
+      <tags>
+        <tag>浏览器，内核</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ubuntu终端解压、压缩命令]]></title>
+    <url>%2F2018%2F02%2F26%2Fubuntu-extract-compress%2F</url>
+    <content type="text"><![CDATA[.tar解包：tar xvf FileName.tar 打包：tar cvf FileName.tar DirName（注：tar是打包，不是压缩！） .gz解压1：gunzip FileName.gz 解压2：gzip -d FileName.gz 压缩：gzip FileName .tar.gz 和 .tgz解压：tar zxvf FileName.tar.gz 压缩：tar zcvf FileName.tar.gz DirName .bz2解压1：bzip2 -d FileName.bz2 解压2：bunzip2 FileName.bz2 压缩： bzip2 -z FileName .tar.bz2解压：tar jxvf FileName.tar.bz2 压缩：tar jcvf FileName.tar.bz2 DirName .bz解压1：bzip2 -d FileName.bz 解压2：bunzip2 FileName.bz 压缩：未知 .tar.bz解压：tar jxvf FileName.tar.bz 压缩：未知 .Z解压：uncompress FileName.Z 压缩：compress FileName .tar.Z解压：tar Zxvf FileName.tar.Z 压缩：tar Zcvf FileName.tar.Z DirName .zip解压：unzip FileName.zip 压缩：zip FileName.zip DirName .rar解压：rar x FileName.rar 压缩：rar a FileName.rar DirName .lha解压：lha -e FileName.lha 压缩：lha -a FileName.lha FileName]]></content>
+      <categories>
+        <category>ubuntu</category>
+      </categories>
+      <tags>
+        <tag>解压</tag>
+        <tag>压缩</tag>
+        <tag>ubuntu</tag>
+        <tag>Liunx</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[python文件内容替换]]></title>
+    <url>%2F2018%2F02%2F26%2Fpython-replace%2F</url>
+    <content type="text"><![CDATA[在处理数据的时候曾经遇到过这样的场景：替换文件中指定的内容，使用python，解决方案的代码如下： 123456lines=open(&apos;mytest.txt&apos;,&apos;r&apos;).readlines()flen=len(lines)for i in range(flen): lines[i]=lines[i].replace(&apos;ABC&apos;,&apos;NewString&apos;)open(&apos;mytest.txt&apos;,&apos;w&apos;).writelines(lines) 原始文件内容： 执行替换代码之后:]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[python]]></title>
+    <url>%2F2018%2F02%2F26%2Fpython-examples1%2F</url>
+    <content type="text"><![CDATA[1.读取文档123data = open(&quot;data.json&quot;,&apos;r&apos;)data = json.loads(data.read())print(len(data)) 2.读取文件夹中的所有文档12345678import glob #一个文件夹下依次读取所有txt文件txt_filenames = glob.glob(&apos;E:\\文件夹名\\&apos;+txtName+&apos;\\*.txt&apos;)for filename in txt_filenames: f = open(filename,&apos;r&apos;) for line in f.readlines(): 接下来按行读取每篇txt 3.存入文档1234567jsonData.sort(key = lambda x:x[&quot;someDataCount&quot;],reverse=True)data=json.dumps(jsonData, sort_keys=True, indent=2)file_object = open(&apos;data.json&apos;, &apos;w&apos;)file_object.write(data)file_object.close( ) 4.txt文本两固定字段间内容12345678import redef findTwoZiduanData(w1,w2,txtData): pat = re.compile(w1+&apos;(.*?)&apos;+w2,re.S) result = pat.findall(txtData) return result;AFData=findTwoZiduanData(&apos;\nAF &apos;,&apos;\nTI&apos;,txtData) 5.为json追加内容1234567jsonData=[]在接下来的代码中： jsonItem=&#123;&#125; jsonItem[&apos;A&apos;]=&quot;sth...&quot;; jsonItem[&apos;B&apos;]=&quot;sth...&quot;; jsonData.append(jsonItem)]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[omnousemove、onmouseenter、onmouseover三者区别]]></title>
+    <url>%2F2018%2F02%2F26%2Fomnousemove-onmouseenter-onmouseover%2F</url>
+    <content type="text"><![CDATA[请点击示例 1234567891011121314151617181920212223242526&lt;p&gt; onmousemove 事件在鼠标移动到 div 元素上时触发。&lt;/p&gt;&lt;p&gt; mouseenter 事件中有在鼠标指针进入 div 元素时触发。 &lt;/p&gt;&lt;p&gt; onmouseover 事件在鼠标指针进入 div 元素时触发,在子元素上也会触发(p 和 span)。&lt;/p&gt;&lt;div onmousemove=&quot;myMoveFunction()&quot;&gt; &lt;p&gt;onmousemove: &lt;br&gt; &lt;span id=&quot;demo1&quot;&gt;鼠标移动到我这!&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div onmouseenter=&quot;myEnterFunction()&quot;&gt; &lt;p&gt;onmouseenter: &lt;br&gt; &lt;span id=&quot;demo2&quot;&gt;鼠标移动到我这!&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;div onmouseover=&quot;myOverFunction()&quot;&gt; &lt;p&gt;onmouseover: &lt;br&gt; &lt;span id=&quot;demo3&quot;&gt;鼠标移动到我这!&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;script&gt; x = 0; y = 0; z = 0; function myMoveFunction() &#123; document.getElementById(&quot;demo1&quot;).innerHTML = z+=1; &#125; function myEnterFunction() &#123; document.getElementById(&quot;demo2&quot;).innerHTML = x+=1; &#125; function myOverFunction() &#123; document.getElementById(&quot;demo3&quot;).innerHTML = y+=1; &#125;&lt;/script&gt; onmousemove 事件在鼠标移动到 div 元素上时触发。 mouseenter 事件在鼠标指针进入 div 元素时触发，唯一的区别是 onmouseenter 事件不支持冒泡;要每进入一次div，数字才能加一 onmouseover 事件在鼠标指针进入 div 元素时触发 ,在子元素上也会触发(p 和 span)；就是说，每进入一次div或span或p，数字都会加一 参考自www.runoob.com]]></content>
+      <categories>
+        <category>css</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[判断一个数组是不是数组，是不是100%准确]]></title>
+    <url>%2F2018%2F02%2F26%2FObject-prototype-toString%2F</url>
+    <content type="text"><![CDATA[Object.prototype.toString是准确的 实例如下：]]></content>
+      <categories>
+        <category>javaScript</category>
+      </categories>
+      <tags>
+        <tag>javaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[nodejs前后端运行之路 怎么解决python问题]]></title>
+    <url>%2F2018%2F02%2F26%2Fnodejs-python-shell%2F</url>
+    <content type="text"><![CDATA[这两天一直在捣鼓nodejs+redis+mongodb的后端，要怎么样在nodejs执行时将获取到的数据进行python处理呢？使用的是python-shell包，（官网）。 然鹅前面还比较顺利，后面就一直出现一个错误 后来多方查探，在所调用的py文件上寻找原因，最终发现原来是numpy库不支持 解决方案：之前是python2与3的版本共存于计算机上，比较乱，后来又安装了anaconda，于是就把python2与3进行了卸载，anaconda所带的python设置到了全局变量的path中。 python-shell是一个包，它的options中可以设置node子进程child_process与python之间的输入输出流的模式：mode可为text,json,binary。 在此项目中，所采用的是json模式，将获取到的数据进行json格式化，输入给py文件，经python处理过之后，再将结果以json的格式返回（在py中最后以print(results)的形式），最终将其保存到cache中。]]></content>
+      <categories>
+        <category>前后端</category>
+      </categories>
+      <tags>
+        <tag>node.js</tag>
+        <tag>python-shell</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[nodejs-mongodb-redis技术栈搭建前后端]]></title>
+    <url>%2F2018%2F02%2F26%2Fnodejs-mongodb-redis%2F</url>
+    <content type="text"><![CDATA[由于目前项目的需要，使用了nodejs、mongodb、redis搭通前后端 (1)首先根据用户的账号密码与网站声称一个url（账号与密码作为url的参数，get请求，获取到数据），根据此进行登录，使用request.get方法： request.get(url,function(error,requeson,body){…}) 判断响应的statusCode是否为200(即是否成功)；与此同时，根据响应头的set-cookie字段获取此时的cookie，进行保存，body即为获取到的数据。 (2)之后，进行数据的处理：将上一步响应得到的数据，在nodejs环境下使用python处理，这里用到python-shell包，（在上一篇博客中写到过这里），pyShell.run(‘test.py’,options,function(err,results){if(err) throw err; else…}) 这里需要注意的是，py文件中对处理结果要使用print，使其输出。在上面语句的函数中可直接使用py文件print输出的变量，进行后续的处理（存进cache或数据库）。 目前项目中还未真正使用Mongodb做任务，后续添加，项目开启需要]]></content>
+      <categories>
+        <category>前后端</category>
+      </categories>
+      <tags>
+        <tag>node.js</tag>
+        <tag>redis</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[我的个人博客开工喽(hexo+github+域名)]]></title>
+    <url>%2F2018%2F02%2F26%2Fmy-first-blog%2F</url>
+    <content type="text"><![CDATA[之前注册了域名，一直没时间整理好自己的博客，然鹅，如今自己鼓捣了两天，虽开始头大，但现在也卓有成效，O(∩_∩)O哈哈~ hexo+github+域名搭建起了自己的博客，采用了Next主题，看着还不错吧~ 对了，在这个网站之前，我的博客都在CSDN中哦，欢迎大家戳戳戳]]></content>
+      <categories>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>github</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[js的运算符delete]]></title>
+    <url>%2F2018%2F02%2F26%2Fjs-delete%2F</url>
+    <content type="text"><![CDATA[在js的原生语言中，delete可以删除对象的 属性，只是断开属性和对象的联系，而不会去操作对象中的属性。 是删除自有的属性，不能删除继承的属性，要删除继承的属性必须从定义这个属性的原型对象删除它，而且这会影响到所有继承自这个原型的对象。 以下是执行的测试：]]></content>
+      <categories>
+        <category>javaScript</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+        <tag>运算符</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[array 引用类型]]></title>
+    <url>%2F2018%2F02%2F26%2Fjs-array%2F</url>
+    <content type="text"><![CDATA[数组是引用类型，在第三个函数的示例当中，var newarr = arr; 实则把arr的引用赋给了newarr，此时改变newarr，arr也会改变的！ 当从一个变量向另一个变量复制引用类型的值时（示例中的第三个函数），同样也会将存储在变量对象的值复制一份放到为新变量分配的空间中。不同的是，这个值的副本实际上是一个指针，而这个指针指向存储在堆中的一个对象。复制结束之后，两个变量实际上将引用同一个对象，因此，改变其中一个变量，就会影响另一个变量。]]></content>
+      <categories>
+        <category>javaScript</category>
+      </categories>
+      <tags>
+        <tag>javaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[http和https区别]]></title>
+    <url>%2F2018%2F02%2F26%2Fhttp%E5%92%8Chttps%E5%8C%BA%E5%88%AB%2F</url>
+    <content type="text"><![CDATA[http可以使浏览器更加高效，使网络传输减少。以明文发送内容，不提供任何方式的数据加密，如果攻击者截取web浏览器和网站服务器之间的传输报文，就可以直接读懂其中的内容，所以，http不适合传输敏感的信息，比如信用卡号、密码等支付的信息等 所以我们会采取安全套接字层超文本传输协议https，https是在http的基础上加入了SSL协议，SSL依靠证书来验证服务器的身份，并为浏览器和服务器之间的通信加密。 https协议的作用主要分两种：1,建立一个信息安全通道，保证数据传输的安全。2，确认网站的真实性。 https的工作原理 https优点尽管HTTPS并非绝对安全，掌握根证书的机构、掌握加密算法的组织同样可以进行中间人形式的攻击，但HTTPS仍是现行架构下最安全的解决方案，主要有以下几个好处： （1）使用HTTPS协议可认证用户和服务器，确保数据发送到正确的客户机和服务器； （2）HTTPS协议是由SSL+HTTP协议构建的可进行加密传输、身份认证的网络协议，要比http协议安全，可防止数据在传输过程中不被窃取、改变，确保数据的完整性。 （3）HTTPS是现行架构下最安全的解决方案，虽然不是绝对安全，但它大幅增加了中间人攻击的成本。 （4）谷歌曾在2014年8月份调整搜索引擎算法，并称“比起同等HTTP网站，采用HTTPS加密的网站在搜索结果中的排名将会更高”。 https缺点虽然说HTTPS有很大的优势，但其相对来说，还是存在不足之处的： （1）HTTPS协议握手阶段比较费时，会使页面的加载时间延长近50%，增加10%到20%的耗电； （2）HTTPS连接缓存不如HTTP高效，会增加数据开销和功耗，甚至已有的安全措施也会因此而受到影响； （3）SSL证书需要钱，功能越强大的证书费用越高，个人网站、小网站没有必要一般不会用。 （4）SSL证书通常需要绑定IP，不能在同一IP上绑定多个域名，IPv4资源不可能支撑这个消耗。 （5）HTTPS协议的加密范围也比较有限，在黑客攻击、拒绝服务攻击、服务器劫持等方面几乎起不到什么作用。最关键的，SSL证书的信用链体系并不安全，特别是在某些国家可以控制CA根证书的情况下，中间人攻击一样可行。 http切换到https 如果需要将网站从http切换到https到底该如何实现呢？ 这里需要将页面中所有的链接，例如js，css，图片等等链接都由http改为https。例如：http://www.baidu.com改为https://www.baidu.com 这里虽然将http切换为了https，还是建议保留http。所以我们在切换的时候可以做http和https的兼容，具体实现方式是，去掉页面链接中的http头部，这样可以自动匹配http头和https头。例如：将http://www.baidu.com改为//www.baidu.com。然后当用户从http的入口进入访问页面时，页面就是http，如果用户是从https的入口进入访问页面，页面即使https的。 http和https的区别 HTTP协议传输的数据都是未加密的，也就是明文的，因此使用HTTP协议传输隐私信息非常不安全，为了保证这些隐私数据能加密传输，于是网景公司设计了SSL（Secure Sockets Layer）协议用于对HTTP协议传输的数据进行加密，从而就诞生了HTTPS。简单来说，HTTPS协议是由SSL+HTTP协议构建的可进行加密传输、身份认证的网络协议，要比http协议安全。 HTTPS和HTTP的区别主要如下： 1、https协议需要到ca申请证书，一般免费证书较少，因而需要一定费用。 2、http是超文本传输协议，信息是明文传输，https则是具有安全性的ssl加密传输协议。 3、http和https使用的是完全不同的连接方式，用的端口也不一样，前者是80，后者是443。 4、http的连接很简单，是无状态的；HTTPS协议是由SSL+HTTP协议构建的可进行加密传输、身份认证的网络协议，比http协议安全。 参考]]></content>
+      <categories>
+        <category>http</category>
+        <category>https</category>
+      </categories>
+      <tags>
+        <tag>http</tag>
+        <tag>https</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[http协议]]></title>
+    <url>%2F2018%2F02%2F26%2Fhttp%2F</url>
+    <content type="text"><![CDATA[应用层的面向对象的协议 无连接：限制每一次只处理一次请求，服务器完成客户请求并收到客户应答之后，就断开连接 无状态：对事务处理没有记忆；就是说如果后续处理需要前面的信息，就要重传 （1） url常基于TCP的连接方式 http://host[&quot;:&quot;post][abs_path] HTTP协议来定位网络资源 host：合法的Internet主机域名或IP地址 port：默认80 abs_path：请求资源的URI(统一资源标识符) 举个栗子：输入：www.guet.edu.cn 浏览器自动转换为http://www.guet.edu.cn/ （2）请求包含3部分：请求行、消息报头、请求正文 请求行Method Request-URI HTTP-Version CRLF 方法符号 请求的URI 协议版本 回车和换行 请求方法： GET 请求获取Request-URI所标识的资源 POST 在 Request-URI所标识的资源后 附加新的数据 HEAD 请求获取由Request-URI所标识的资源的响应消息报头 PUT 请求服务器存储的一个资源，并用Request-URI作为其标识 DELETE 请求服务器删除Request-URI所标识的资源 OPTIONS 请求查询服务器的性能，或查询与资源相关的选项与需求 消息报头请求报头 允许客户端向服务器端传递请求的附加信息以及客户端自身信息 常用的请求报头： Accept：指定客户端接受哪些类型的信息 Accept-Charset：指定客户端接受的字符集 Accept-Encoding：指定可接受的内容编码 Accept-Language：指定一种自然语言 Host：指定被请求资源的Internet主机和端口号 User-Agent： 我们上网登陆论坛的时候，往往会看到一些欢迎信息，其中列出了你的操作系统的名称和版本，你所使用的浏览器的名称和版本，这往往让很多人感到很神奇，实际上，服务器应用程序就是从User-Agent这个请求报头域中获取到这些信息。User-Agent请求报头域允许客户端将它的操作系统、浏览器和其它属性告诉服务器。不过，这个报头域不是必需的，如果我们自己编写一个浏览器，不使用User-Agent请求报头域，那么服务器端就无法得知我们的信息了。 （3） 响应在接收和解释请求消息之后，服务器返回一个HTTP响应消息 3部分组成：状态行、消息报头、响应正文 状态行HTTP-Version Status0Code Reason-Phrase CRLF 服务器HTTP协议版本 服务器发回的响应状态代码 状态代码的文本描述 回车和换行 状态代码： 3个数字，第一个数字代表了响应的类别 1xx：指示信息–表示请求已接收，继续处理 2xx：成功–表示请求已被成功接收、理解、接受 3xx：重定向–要完成请求必须进行更进一步的操作 4xx：客户端错误–请求有语法错误或请求无法实现 5xx：服务器端错误–服务器未能实现合法的请求 举个栗子 200 OK //客户端请求成功 400 Bad Request //客户端请求有语法错误，不能被服务器所理解 401 Unauthorized //请求未经授权，这个状态代码必须和WWW-Authenticate报头域一起使用 403 Forbidden //服务器接到请求，但拒绝提供服务 404 Not Found //请求资源不存在，eg：输入了错误的URL 500 Internal Server Error //服务器发生不可预期的错误 503 Server Unavailable //服务器当前不能处理客户端的请求，一段时间后可能恢复正常 消息报头响应报头 允许服务器传递不能放在状态行中的附加响应信息，以及关于服务器的信息和对Request-URI所标识的资源进行下一步访问的信息 Location:用于重定向接受者到一个新的位置，常用在更换域名的时候 Server:包含了服务器用来处理请求的软件信息 响应正文服务器返回的资源内容]]></content>
+      <categories>
+        <category>http</category>
+      </categories>
+      <tags>
+        <tag>http</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[get和post的区别]]></title>
+    <url>%2F2018%2F02%2F26%2Fget-post%2F</url>
+    <content type="text"><![CDATA[get（1）get 常用在获取资源上 （2）get 是幂等的， 幂等的含义：对于单目运算，一个运算对于范围内的所有的一个数多次进行该运算，得到的结果和进行一次运算的结果是一样的，那么该运算就是幂等的，比如说数学上的求绝对值；碎玉双目运算，当要求参与运算的两个值时等值的情况下，若满足运算结果与参与运算的两个值时相等的，那么该运算也是幂等的，如max(x,x)=x get 这里所说的幂等指的是多个请求返回相同的结果。（HEAD也是幂等的），不管请求多少次，资源还是在那里 值得一说的还有，DELETE和PUT也是幂等的，对同一个资源删除一次或多少次，结果都是一样的，就是被删除了，不存在了。PUT也是幂等的，是因为PUT一个新资源的时候，资源被创建，再次PUT这个URI的时候，资源还是没变，当PUT一个存在的资源的时候，更新了资源，当再次更新的时候，还是更新成那个样子，资源还是没有改变，PUT在进行更新的时候，不能做相对的更新（依赖于资源现状的状态），比如每次对一个数加1，那样资源就会发生改变，应该是每次都更新成某个数字，比如把某个数变成3，那么无论PUT多少次，这个数的值都是3，这样就是幂等 get、head、delete、put一定要设置成幂等的，因为网络是不可靠的，安全性和幂等性就显得非常重要的，如果一次请求，服务器收到处理之后，客户端没有收到响应，客户端会再次发送请求的，如果没有幂等，那么就会发生意想不到的问题。 （3）get请求的数据会附在URL之后（就是把数据放在HTTP协议头中），以？分割URL和传输的数据，参数之间使用&amp;相连 如果数据时数字或字母，原样发送；如果是空格，转换为+；如果是中文或其他字符，则把它转换成base64的格式，得出如：%E4%BD%A0%E5%A5%BD，其中％XX中的XX为该符号以16进制表示的ASCII （4）get提交的数据量较小 （5）get能被缓存 （6）get参数保留在浏览器的历史记录中 （7）后退与刷新，get无影响 post（1）post常用在修改信息上，表示可以修改服务器上的资源的请求。 （2）post不是幂等的，比如post两个一模一样的内容，自会产生两个资源，URI可能是这样的：/weblogs/a/1和/weblogs/a/2，尽管它们的内容是一模一样的。 （3）post把提交的数据放置在HTTP包的包体中。 （4）post提交的数据理论上没有大小的限制，可传输较大量的数据 （5）post不能被缓存 （6）post的参数不会被保存在浏览器的历史记录中 （7）后退与刷新，post会被重新提交]]></content>
+      <categories>
+        <category>http</category>
+      </categories>
+      <tags>
+        <tag>get</tag>
+        <tag>post</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[深拷贝 浅拷贝 冻结]]></title>
+    <url>%2F2018%2F02%2F26%2Ffreeze-clone%2F</url>
+    <content type="text"><![CDATA[彻底冻结(将对象冻结，对象的所有属性也冻结)12345678910var newObj = (obj)=&gt;&#123; Object.freeze(obj); Object.keys(obj)=&gt;((key)=&gt;&#123; if(typeof obj[key]==‘Object’)&#123; newObj(obj(key)); &#125; &#125;)&#125; 浅拷贝如下示例： 更改newObj的属性对象中值，obj相应位置也会发生改变 这是因为浅拷贝对各个属性进行复制，基本的数据类型会分配新的空间，但复制引用类型，同样会将存储在变量对象中的值复制一份放到为新变量分配的空间中，不同的是，这个值的副本实际上是一个指针，而这个指针指向存储在堆中的一个对象，复制后，两个变量将引用同一个对象，因此，改变一个变量，会影响另一个变量。 1234567891011121314151617181920212223242526272829var obj=&#123;a:1,arr:[2,3]&#125;;var newObj = qCopy(obj);console.log(newObj);newObj.arr[0]=&quot;a&quot;;console.log(obj.arr[0]) //改变 变成了aobj.arr[1]=&quot;b&quot;;console.log(newObj.arr[1]) //改变 变成了bnewObj.a=&apos;1111&apos;;console.log(obj.a); //不变 还是1function qCopy(obj) &#123; var temp=&#123;&#125;; for(key in obj)&#123; if(obj.hasOwnProperty(key))&#123; temp[key] = obj[key]; &#125; &#125; return temp;&#125; 深拷贝深拷贝可以解决上面浅拷贝的问题 法一：JSON解析:缺点：无法复制函数；原型链没了，对象就是object，所属的类没了 123456789101112131415161718var obj=&#123;a:1,arr:[2,3]&#125;;//借助JSON解析实现深拷贝var newObj = JSON.parse(JSON.stringify(obj))console.log(newObj);newObj.arr[0]=&quot;a&quot;;console.log(obj.arr[0]) //不变 2obj.arr[1]=&quot;b&quot;;console.log(newObj.arr[1]) //不变 3newObj.a=&apos;1111&apos;; //newObj的a变成了111console.log(obj.a); //不变 1 法二:实现数组、对象的拷贝，递归调用“浅拷贝”即可1234567891011121314151617181920212223242526272829303132var obj=&#123;a:1,arr:[2,3]&#125;; var newObj; newObj = dCopy(obj,newObj); console.log(newObj); function dCopy(obj,c) &#123; var c=c||&#123;&#125;; for(var i in obj)&#123; if(typeof(obj[i]) ===&apos;object&apos;)&#123; c[i] = (obj[i].constructor===Array)?[]:&#123;&#125;; dCopy(obj[i],c[i]) &#125; else&#123; c[i]=obj[i]; &#125; &#125; return c; &#125; newObj.arr[0]=&quot;a&quot;; console.log(obj.arr[0]) //不变 2 obj.arr[1]=&quot;b&quot;; console.log(newObj.arr[1]) //不变 3 newObj.a=&apos;1111&apos;; //newObj的a变成了111 console.log(obj.a); //不变 1]]></content>
+      <categories>
+        <category>javaScript</category>
+      </categories>
+      <tags>
+        <tag>javaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F02%2F26%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
