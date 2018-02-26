@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[svg]]></title>
+    <url>%2F2018%2F02%2F26%2Fsvg%E7%BB%98%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[svg绘图]]></content>
+      <categories>
+        <category>svg</category>
+      </categories>
+      <tags>
+        <tag>svg</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[浏览器内核]]></title>
     <url>%2F2018%2F02%2F26%2F%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E6%A0%B8%2F</url>
     <content type="text"><![CDATA[1.Trident内核又称IE内核，主要用于的浏览器有IE、遨游、 2.Webkit内核浏览器有Safari和Chrome 主要用于Mac OS系统 在2013年发布的Chrome28.0.1469.0版本开始，Chrome开始使用最新的 Blink 引擎。 3.Gecko内核是最流行的排版引擎之一，仅次于Trident。浏览器有Firefox、 Netscape6至9 4.Presto内核浏览器有Opera7.0及以上]]></content>
